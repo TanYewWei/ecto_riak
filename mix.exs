@@ -14,7 +14,7 @@ defmodule EctoRiak.Mixfile do
   end
 
   defp deps do
-    [ { :jiffy, github: "davisp/jiffy" },
+    [ { :jazz, github: "meh/jazz" },
       { :meck, "0.8.1", github: "basho/meck", tag: "0.8.1", override: true },  ## conflicting deps
       { :pooler, github: "seth/pooler" },
       { :riakc, github: "basho/riak-erlang-client", ref: "90b6d000ea1f209d4e6673a72d92ca48a2ae2529" },
