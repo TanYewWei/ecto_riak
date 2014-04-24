@@ -4,7 +4,6 @@ defmodule EctoRiak.Mixfile do
   def project do
     [ app: :ecto_riak,
       version: "0.0.1",
-      elixir: "~> 0.12.1-dev",
       deps: deps ]
   end
 
@@ -15,7 +14,7 @@ defmodule EctoRiak.Mixfile do
 
   defp deps do
     [ { :jazz, github: "meh/jazz" },
-      { :meck, "0.8.1", github: "basho/meck", tag: "0.8.1", override: true },  ## conflicting deps
+      { :meck, "0.8.1", github: "basho/meck", tag: "0.8.1", compile: "rebar compile", override: true },  ## conflicting deps
       { :pooler, github: "seth/pooler" },
       { :riakc, github: "basho/riak-erlang-client", ref: "90b6d000ea1f209d4e6673a72d92ca48a2ae2529" },
       { :statebox, github: "mochi/statebox" } ]
